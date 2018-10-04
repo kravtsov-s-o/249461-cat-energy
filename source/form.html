@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="" alt="img/logo.svg" width="33" height="38" alt="CAT ENERGY">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="CAT ENERGY">
     </a>
-    <p class="site-name"><b>Cat</b> Energy</p>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Открыть меню</button>
       <ul class="main-nav__list site-list">
@@ -32,20 +33,20 @@
     <p class="form-description">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form class="program" action="https://echo.htmlacademy.ru" method="post">
       <p class="program__name">
-        <label for="name"></label>
+        <label for="name">Имя:*</label>
         <input class="" name="name" id="name" type="text" placeholder="Барсик">
       </p>
       <p class="program__weight">
-        <label for="weight"></label>
-        <input class="" name="weight" id="weight" type="text" placeholder="Барсик">
+        <label for="weight">Вес (кг):*</label>
+        <input class="" name="weight" id="weight" type="text" placeholder="7">
       </p>
       <p class="program__age">
-        <label for="age"></label>
-        <input class="" name="age" id="age" type="text" placeholder="Барсик">
+        <label for="age">Возраст (лет):*</label>
+        <input class="" name="age" id="age" type="text" placeholder="7">
       </p>
       <p class="program__choice">
-        <label for="losing-weight"><input class="" name="choice" id="losing-weight" type="radio">Похудение</label>
-        <label for="weight-gain"><input class="" name="choice" id="weight-gain" type="radio">Набор массы</label>
+        <label for="losing-weight"><input class="" name="choice" id="losing-weight" type="radio" checked>Похудение</label><br>
+        <label for="weight-gain"><input class="" name="choice" id="weight-gain" type="radio">Набор массы</label><br>
         <label for="advice"><input class="" name="choice" id="advice" type="radio">Не знаю (нужен ваш совет)</label>
       </p>
       <fieldset>
@@ -67,23 +68,23 @@
       <fieldset>
         <legend>Дополнительно</legend>
         <p>
+          <input class="" name="sugar" id="sugar" type="checkbox" checked>
           <label for="sugar">Сахарозаменитель</label>
-          <input class="" name="sugar" id="sugar" type="checkbox">
         </p>
         <p>
-          <label for="water">Сахарозаменитель</label>
           <input class="" name="water" id="water" type="checkbox">
+          <label for="water">Сахарозаменитель</label>
         </p>
         <p>
-          <label for="milk">Сахарозаменитель</label>
           <input class="" name="milk" id="milk" type="checkbox">
+          <label for="milk">Сахарозаменитель</label>
         </p>
         <p>
-          <label for="vitamins">Сахарозаменитель</label>
           <input class="" name="vitamins" id="vitamins" type="checkbox">
+          <label for="vitamins">Сахарозаменитель</label>
         </p>
       </fieldset>
-      <button class="programm-btn" type="submit">Отправить заявку</button>
+      <button class=" btn programm-btn" type="submit">Отправить заявку</button>
       <p>* - Обязательные поля</p>
     </form>
   </main>
@@ -91,9 +92,10 @@
     <section class="main-footer__contacts contacts">
       <b class="contacts__slogan">приглашаем к сотрудничеству дилеров!</b>
       <p class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      <img class="contacts__map" src="img/mao.jpg" width="1345" height="645" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="contacts__map-pin" src="img/map-pin.png" width="124" height="106" alt="Указатель карты">
     </section>
-    <p class="site-name site-name--footer"><b>Cat</b> Energy</p>
+    <a class="main-footer__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY"></a>
     <section class="main-footer__social social">
       <ul class="social-list">
         <li class="social-list__item">
