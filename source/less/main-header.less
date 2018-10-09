@@ -1,0 +1,44 @@
+.main-header__logo {
+  display: block;
+  margin-top: 11px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+  width: 191px;
+  height: 38px;
+}
+
+@import "main-nav.less";
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 35px;
+    padding: 25px 30px;
+  }
+
+  .main-header__logo {
+    margin: 0;
+    width: 173px;
+    height: 58px;
+
+    //временно
+    background-image: url("../img/logo-tablet.svg");
+  }
+
+  .main-header__logo-image {
+    opacity: 0.1;
+  }
+}

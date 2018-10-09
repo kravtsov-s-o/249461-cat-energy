@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+  width: 100%;
+  padding: 11px 0;
+
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: @color-brand;
+  border: none;
+
+  &:hover {
+    background-color: @color-hover;
+  }
+
+  &:active {
+    background-color: @color-hover;
+    color: fade(#ffffff, 50%);
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .btn {
+    padding: 16px 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,30 @@
+.main-footer {
+  background-color: #f2f2f2;
+}
+
+@import "contacts.less";
+
+.main-footer__logo {
+  display: block;
+  width: 280px;
+  margin: 30px auto;
+
+  text-align: center;
+}
+
+@import "social.less";
+@import "copyright.less";
+
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 58px 30px;
+  }
+
+  .main-footer__logo {
+    width: 128px;
+    margin: 0;
+  }
+}
