@@ -1,0 +1,47 @@
+.page-header__logo {
+  display: block;
+  margin-top: 11px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  width: 191px;
+  height: 38px;
+
+  // временно
+  outline: 1px solid red;
+}
+
+@import "main-nav.less";
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-header__logo {
+    margin: 25px 30px;
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+}

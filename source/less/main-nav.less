@@ -28,13 +28,6 @@
   background-image: url("../img/icon-close.svg");
 }
 
-.main-nav__list {
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-}
-
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .main-nav__list {
     display: none;
@@ -45,14 +38,17 @@
   }
 }
 
+@import "nav-list.less";
+
 @media (min-width: @tablet-width) {
   .main-nav {
     border: none;
   }
-
   .main-nav__toggle {
     display: none;
   }
 }
 
-@import "site-list.less";
+@media (min-width: @desktop-width) {
+
+}
