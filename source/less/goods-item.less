@@ -1,0 +1,50 @@
+.goods-item {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  &__title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  &__description,
+  &__price {
+    width: 50%;
+    margin: 0;
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: "Arial", sans-serif;
+  }
+
+  &__price {
+    text-align: right;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .goods-item {
+    padding: 27px 38px;
+    justify-content: space-between;
+  }
+
+  &__title {
+    width: 346px;
+  }
+
+  &__description {
+    width: 200px
+  }
+  &__price {
+    width: 95px;
+    text-align: right;
+  }
+}

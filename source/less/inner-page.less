@@ -1,0 +1,31 @@
+.inner-page {
+  width: 320px;
+  margin: 0 auto;
+
+  &__title {
+    margin: 0;
+    padding: 20px;
+
+    font-size: 36px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .inner-page {
+    width: 768px;
+
+    &__title {
+      padding: 30px;
+
+      font-size: 60px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .inner-page {
+    width: 100%;
+  }
+}
