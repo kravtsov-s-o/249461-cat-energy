@@ -1,4 +1,15 @@
+.page-header {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .page-header__logo {
+  width: 191px;
+  height: 38px;
   display: block;
   margin-top: 11px;
   margin-bottom: 16px;
@@ -13,34 +24,30 @@
   }
 }
 
-.page-header__logo-image {
-  width: 191px;
-  height: 38px;
-
-  // временно
-  outline: 1px solid red;
-}
-
 @import "main-nav.less";
 
 @media (min-width: @tablet-width) {
   .page-header {
+    border: none;
+  }
+  .page-header__wrapper{
+    width: 768px;
     display: flex;
     justify-content: space-between;
   }
 
   .page-header__logo {
-    margin: 25px 30px;
-  }
-
-  .page-header__logo-image {
     width: 173px;
     height: 58px;
+    margin: 25px 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__logo-image {
+  .page-header__wrapper {
+    width: 1220px;
+  }
+  .page-header__logo {
     width: 202px;
     height: 59px;
   }

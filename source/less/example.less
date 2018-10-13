@@ -1,7 +1,10 @@
 .example {
-  padding: 20px;
-
   background-color: #f2f2f2;
+}
+
+.example__depiction {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .example__title {
@@ -32,6 +35,11 @@
   text-transform: uppercase;
 }
 
+.example__live {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .example__images {
   margin-bottom: 35px;
 
@@ -48,16 +56,21 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    padding: 0 30px;
     padding-bottom: 60px;
 
     background-color: #ffffff;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 55%, #f2f2f2 55%, #f2f2f2 100%);
   }
+
+  .example__depiction {
+    width: 706px;
+  }
+
   .example__title {
     margin-bottom: 57px;
     font-size: 60px;
   }
+
   .example__description {
     font-size: 16px;
     line-height: 24px;
@@ -71,17 +84,24 @@
     line-height: 25px;
     text-align: right;
   }
+
+  .example__live {
+    width: 708px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .example {
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+  }
+
+  .example__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-grow: 0;
     flex-shrink: 0;
     width: 1220px;
     margin: 0 auto;
-
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
   }
 
   .example__title {
@@ -89,8 +109,9 @@
     margin-bottom: 137px;
   }
 
-  .example__wrapper {
+  .example__depiction {
     width: 450px;
+    margin: 0;
   }
 
   .example__cost {
@@ -106,6 +127,7 @@
 
   .example__live {
     width: 690px;
+    margin: 0;
   }
 
   .example__image {

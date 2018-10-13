@@ -1,26 +1,20 @@
 .goods-list {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 39px;
-
-  &__item {
-    border-top: 1px solid #cdcdcd;
-  }
-
-  &__item:last-child {
-    border-bottom: 1px solid #cdcdcd;
-  }
+  border-collapse: collapse;
 }
 
 @import "goods-item.less";
 
 @media (min-width: @tablet-width) {
   .goods-list {
-    width: 704px;
+    width: 708px;
+   }
+}
 
-    &__item {
-      border-left: 1px solid #cdcdcd;
-      border-right: 1px solid #cdcdcd;
-    }
+@media (min-width: @desktop-width) {
+  .goods-list {
+    width: 895px;
+    margin: 0;
   }
 }

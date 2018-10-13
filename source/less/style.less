@@ -21,8 +21,12 @@
 
 @import "normalize.less";
 
+
+
+@import "button.less";
+
 body {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
 
@@ -55,28 +59,24 @@ img {
   overflow: hidden;
 }
 
-@import "button.less";
+@media (min-width: @tablet-width) {
+  body {
+    min-width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    min-width: 1440px;
+  }
+}
+
 @import "main-header.less";
 @import "alicament.less";
 @import "categories.less";
 @import "advantages.less";
 @import "example.less";
 @import "main-footer.less";
-
 @import "inner-page.less";
 @import "catalog.less";
 @import "additional-goods.less";
-@import "present.less";
-
-
-@media (min-width: @tablet-width) {
-  body {
-    width: 768px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    width: 100%;
-  }
-}
