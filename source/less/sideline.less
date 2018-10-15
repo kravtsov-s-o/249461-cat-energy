@@ -1,0 +1,77 @@
+.sideline__item {
+  margin-bottom: 27px;
+  padding-left: 46px;
+}
+
+.sideline__label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -46px;
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 21px 16px;
+    border: 1px solid #cdcdcd;
+  }
+
+  &:hover&::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.sideline__checkbox:checked + .sideline__label::before {
+  background-image: url("../img/icon-tick.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .field-more__sideline {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sideline__item {
+    width: 216px;
+    margin-bottom: 55px;
+    padding-left: 59px;
+  }
+
+  .sideline__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: -4px;
+      left: -59px;
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-more__sideline {
+    justify-content: flex-start;
+  }
+
+  .sideline__item {
+    margin-right: 40px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}
