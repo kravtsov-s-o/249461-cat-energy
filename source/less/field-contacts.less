@@ -1,0 +1,123 @@
+.field-contacts__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.field-contacts__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.field-contacts__item {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.field-contacts__label {
+  margin-right: 16px;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.field-contacts__input {
+  flex-grow: 1;
+  padding: 13px 15px;
+  padding-right: 46px;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  outline: none;
+  box-sizing: border-box;
+
+  &:hover {
+    border-color: #cfcfcf;
+  }
+
+  &:focus {
+    border-width: 2px;
+    border-color: #444444;
+  }
+
+  &--error {
+    border-width: 2px;
+    border-color: #ff8282;
+  }
+}
+
+.field-contacts__svg {
+  margin-left: -33px;
+}
+
+.field-contacts__input:focus + .field-contacts__svg {
+  fill: @color-brand;
+}
+
+.field-contacts__input--error + .field-contacts__svg {
+  fill: #ff8282;
+}
+
+@media (min-width: @tablet-width) {
+  .field-contacts__wrapper {
+    width: 630px;
+  }
+
+  .field-contacts__title {
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .field-contacts__item {
+    margin-bottom: 20px;
+  }
+
+  .field-contacts__label {
+    margin-right: 18px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-contacts__input {
+    padding: 16px 21px;
+    padding-right: 52px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .field-contacts__svg {
+    margin-left: -35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-contacts__wrapper {
+    display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1220px;
+  }
+
+  .field-contacts__title {
+    width: 1000px;
+  }
+
+  .field-contacts__item {
+    width: 570px;
+    margin-bottom: 0;
+  }
+}

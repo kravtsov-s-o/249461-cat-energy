@@ -1,0 +1,130 @@
+.alicament {
+  background-color: #ffffff;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% auto;
+}
+
+.alicament__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.alicament__title {
+  margin: 0;
+  margin-top: 9px;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+.alicament__slogan {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.alicament__image {
+  width: 280px;
+  height: auto;
+
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .alicament {
+    background-image: none;
+  }
+
+  .alicament__wrapper {
+    width: 706px;
+    padding: 0 30px;
+  }
+
+  .alicament__title {
+    width: 420px;
+    margin-bottom: 32px;
+    padding-left: 90px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .alicament__slogan {
+    margin-bottom: 20px;
+    padding-left: 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #111111;
+  }
+
+  .alicament__image {
+    width: 708px;
+    height: auto;
+  }
+
+  .alicament__button {
+    margin-left: 90px;
+    transform: translateY(-580px);
+    width: 245px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .alicament {
+    background: none;
+  }
+
+  .alicament__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 1220px;
+    padding: 0;
+    padding-left: 82px;
+
+    box-sizing: border-box;
+  }
+
+  .alicament__title {
+    order: -3;
+    margin-top: 100px;
+    padding: 0;
+}
+
+  .alicament__slogan {
+    order: -2;
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+  .alicament__image {
+    width: 552px;
+    height: auto;
+    margin-top: -345px;
+    margin-left: 369px;
+}
+
+  .alicament__button {
+    order: -1;
+    margin-left: 0;
+    transform: none;
+  }
+}

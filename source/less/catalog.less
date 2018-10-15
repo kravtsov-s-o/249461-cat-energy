@@ -1,0 +1,33 @@
+.catalog {
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+@import "product.less";
+@import "more-product.less";
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 706px;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .catalog {
+    width: 1220px;
+    justify-content: flex-start;
+
+    &__product {
+      margin-right: 80px;
+
+      &:nth-child(4n) {
+        margin-right: 0;
+      }
+    }
+  }
+}

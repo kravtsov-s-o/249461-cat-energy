@@ -1,0 +1,61 @@
+.field-comment__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.field-comment__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.field-comment__textarea {
+  width: 252px;
+  height: 108px;
+  padding: 14px;
+  resize: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  outline: none;
+
+  &:hover {
+    border-color: #cdcdcd;
+  }
+
+  &:focus {
+    border-color: #444444;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .field-comment__wrapper {
+    width: 630px;
+  }
+
+  .field-comment__title {
+    margin-bottom: 70px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .field-comment__textarea {
+    width: 590px;
+    height: 140px;
+    padding: 16px 19px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field-comment__wrapper {
+    width: 1220px;
+  }
+
+  .field-comment__textarea {
+    width: 1182px;
+  }
+}

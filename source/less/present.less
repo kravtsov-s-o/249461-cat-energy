@@ -1,0 +1,65 @@
+.present {
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 35px;
+  padding-top: 65px;
+  padding-bottom: 43px;
+
+  text-align: center;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.present svg {
+  fill: #ffffff;
+  margin-bottom: 65px;
+}
+
+.present__description {
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Arial", sans-serif;
+  color: #ffffff;
+}
+
+@media (min-width: @tablet-width){
+  .present {
+    display: flex;
+    justify-content: space-between;
+    width: 491px;
+    margin-top: 69px;
+    margin-bottom: 76px;
+    padding-left: 90px;
+    padding-right: 125px;
+    padding-bottom: 75px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .present svg {
+    margin: 0;
+  }
+
+  .present__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .present {
+    width: 245px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+  .present__description {
+    text-align: center;
+  }
+}

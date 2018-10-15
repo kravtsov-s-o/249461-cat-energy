@@ -1,0 +1,50 @@
+.field-control__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.field-control__button {
+  margin-bottom: 22px;
+}
+
+.field-control__required {
+  font-size: 14px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+@media (min-width:@tablet-width) {
+  .field-control__wrapper {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 630px;
+  }
+
+  .field-control__button,
+  .field-control__required {
+    width: 283px;
+  }
+
+  .field-control__button {
+    margin: 0;
+  }
+
+  .field-control__required {
+    font-size: 16px;
+    text-align: left;
+  }
+}
+
+@media (min-width:@tablet-width) {
+  .field-control__wrapper {
+    width: 1220px;
+  }
+
+  .field-control__button,
+  .field-control__required {
+    width: 568px;
+  }
+}

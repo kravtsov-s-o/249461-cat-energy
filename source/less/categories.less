@@ -1,0 +1,20 @@
+.categories {
+  width: 280px;
+  margin: 0 auto;
+}
+
+@import "category.less";
+
+@media (min-width: @tablet-width) {
+  .categories {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .categories {
+    display: flex;
+    justify-content: space-between;
+    width: 1220px;
+  }
+}

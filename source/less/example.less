@@ -1,0 +1,136 @@
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__depiction {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-family: "Arial", sans-serif;
+}
+
+@import "result-list.less";
+
+.example__cost {
+  margin: 0;
+  margin-bottom: 40px;
+
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__live {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__images {
+  margin-bottom: 35px;
+
+  &--before .example__image--after {
+    display: none;
+  }
+
+  &--after .example__image--before {
+    display: none;
+  }
+}
+
+@import "controls.less";
+
+@media (min-width: @tablet-width) {
+  .example {
+    padding-bottom: 60px;
+
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 55%, #f2f2f2 55%, #f2f2f2 100%);
+  }
+
+  .example__depiction {
+    width: 706px;
+  }
+
+  .example__title {
+    margin-bottom: 57px;
+    font-size: 60px;
+  }
+
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__cost {
+    width: 190px;
+    margin-top: -100px;
+    margin-left: 516px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+  }
+
+  .example__live {
+    width: 708px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 30%, #f2f2f2 30%, #f2f2f2 100%);
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .example__title {
+    margin-top: 44px;
+    margin-bottom: 137px;
+  }
+
+  .example__depiction {
+    width: 450px;
+    margin: 0;
+  }
+
+  .example__cost {
+    width: 100%;
+    margin: 0;
+
+    text-align: left;
+  }
+
+  .example__cost span {
+    margin-left: 64px;
+  }
+
+  .example__live {
+    width: 690px;
+    margin: 0;
+  }
+
+  .example__image {
+    width: 677px;
+  }
+}

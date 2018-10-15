@@ -1,0 +1,48 @@
+.copyright {
+  width: 280px;
+  margin: 0 auto;
+  padding: 22px 0;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+  text-decoration: none;
+
+  &:hover svg {
+    fill: @color-brand;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link svg {
+  width: 27px;
+  height: 34px;
+
+  fill: #444444;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyright__link {
+    justify-content: flex-end;
+  }
+
+  .copyright__link svg {
+    margin-left: 23px;
+  }
+}
