@@ -13,6 +13,7 @@
 
 .goods-item__title {
   width: 100%;
+  margin-top: -1px;
   padding-bottom: 14px;
 
   font-size: 16px;
@@ -33,21 +34,29 @@
 
 .goods-item__price {
   text-align: right;
+  text-transform: uppercase;
+}
+
+.goods-item__btn {
+  width: 100%;
 }
 
 .goods-item__button {
-  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .goods-item {
     padding: 27px 38px;
+    padding-bottom: 26px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }
 
   .goods-item__title {
-    width: 340px;
+    width: 344px;
     padding-bottom: 26px;
 
     font-size: 20px;
@@ -56,7 +65,8 @@
 
   .goods-item__description,
   .goods-item__price {
-    padding-bottom: 24px;
+    padding-top: 2px;
+    padding-bottom: 21px;
 
     font-size: 16px;
     line-height: 20px;
@@ -64,35 +74,38 @@
   }
 
   .goods-item__description {
-    width: 192px;
+    width: 191px;
   }
 
   .goods-item__price {
-    width: 94px;
+    width: 95px;
   }
 
   .goods-item__button {
-    width: 100%;
+    width: 630px;
   }
 }
 
 @media (min-width: @desktop-width) {
+
   .goods-item {
     flex-wrap: nowrap;
     align-items: center;
-    padding: 15px 0;
+    padding: 0;
     border-left: none;
     border-right: none;
   }
 
   .goods-item__title {
     width: 325px;
-    padding-bottom: 0;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .goods-item__description,
   .goods-item__price {
-    padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: ;
     text-align: left;
   }
 
@@ -102,6 +115,10 @@
 
   .goods-item__price {
     width: 80px;
+  }
+
+  .goods-item__btn {
+    width: 245px;
   }
 
   .goods-item__button {

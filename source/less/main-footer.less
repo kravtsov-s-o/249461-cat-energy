@@ -8,8 +8,23 @@
   display: block;
   width: 280px;
   margin: 30px auto;
+  margin-top: 40px;
+  margin-bottom: 28px;
 
   text-align: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-footer__logo img {
+  width: 128px;
+  height: 24px;
 }
 
 .main-footer__wrapper {
@@ -26,7 +41,7 @@
     justify-content: space-between;
     align-items: center;
     width: 708px;
-    padding: 58px 0;
+    padding: 45px 0;
   }
 
   .main-footer__logo {
@@ -38,6 +53,6 @@
 @media (min-width: @desktop-width) {
   .main-footer__wrapper {
     width: 1220px;
-    padding: 58px 0;
+    padding: 49px 0;
   }
 }
