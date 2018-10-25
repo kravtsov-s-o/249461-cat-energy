@@ -25,12 +25,19 @@
 }
 
 @media (min-width:@tablet-width) {
+  .field-control {
+    margin: 0;
+    margin-top: -6px;
+    margin-bottom: 72px;
+    padding-bottom: 0;
+  }
+
   .field-control__wrapper {
     display: flex;
     flex-shrink: 0;
     justify-content: space-between;
     align-items: center;
-    width: 630px;
+    width: 628px;
   }
 
   .field-control__button,
@@ -40,6 +47,8 @@
 
   .field-control__button {
     margin: 0;
+    padding: 16px 0;
+    font-size: 20px;
   }
 
   .field-control__required {
@@ -49,8 +58,13 @@
 }
 
 @media (min-width:@desktop-width) {
+  .field-control {
+    margin-top: 33px;
+    margin-bottom: 81px;
+  }
+
   .field-control__wrapper {
-    width: 1220px;
+    width: 1218px;
   }
 
   .field-control__button,

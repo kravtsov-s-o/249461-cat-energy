@@ -1,16 +1,29 @@
 .field-contacts {
-  margin-bottom: 28px;
+  margin-bottom: 42px;
+  border-top: 3px solid @color-brand;
 }
+
 .field-contacts__wrapper {
   width: 280px;
   margin: 0 auto;
 }
 
 .field-contacts__title {
+  position: relative;
   display: flex;
+  margin-top: -17px;
   margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 14px, @color-brand 14px, @color-brand 17px, transparent 17px, transparent 100%);
+}
+
+.field-contacts__title span {
+  display: inline-block;
+  width: 190px;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 10px;
   background-color: #ffffff;
 }
 
@@ -58,13 +71,13 @@
   }
 
   &:focus {
-    border-width: 2px;
     border-color: #444444;
+    box-shadow: 0 0 0 1px #444444;
   }
 
   &--error {
-    border-width: 2px;
     border-color: #ff8282;
+    box-shadow: 0 0 0 1px #ff8282;
   }
 }
 
@@ -86,14 +99,27 @@
 }
 
 @media (min-width: @tablet-width) {
+  .field-contacts {
+    margin-bottom: 87px;
+  }
+
   .field-contacts__wrapper {
-    width: 630px;
+    width: 628px;
   }
 
   .field-contacts__title {
-    margin-bottom: 70px;
+    margin-top: -24px;
+    margin-bottom: 75px;
     font-size: 36px;
     line-height: 36px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 21px, @color-brand 21px, @color-brand 24px, transparent 24px, transparent 100%);
+  }
+
+  .field-contacts__title span {
+    width: auto;
+    margin-left: -39px;
+    padding-left: 39px;
+    padding-right: 40px;
   }
 
   .field-contacts__item {
@@ -101,14 +127,20 @@
   }
 
   .field-contacts__label {
-    margin-right: 18px;
+    margin-right: 20px;
     font-size: 20px;
     line-height: 20px;
+
+    &--phone {
+      margin-right: 14px;
+    }
   }
 
   .field-contacts__input {
-    padding: 16px 21px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-right: 52px;
+    padding-left: 20px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -119,12 +151,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .field-contacts {
+    margin-bottom: 90px;
+  }
+
   .field-contacts__wrapper {
     display: flex;
     flex-shrink: 0;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 1220px;
+    width: 1218px;
   }
 
   .field-contacts__title {
@@ -134,5 +170,10 @@
   .field-contacts__item {
     width: 570px;
     margin-bottom: 0;
+  }
+
+  .field-contacts__svg {
+    margin-top: 2px;
+    margin-right: 5px;
   }
 }
