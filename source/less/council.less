@@ -9,7 +9,7 @@
 }
 
 .council__item {
-  margin-top: 24px;
+  margin-top: 25px;
   padding-left: 46px;
 
   &:last-child {
@@ -71,10 +71,11 @@
 
   .council__item {
     margin-top: 34px;
+    margin-bottom: -3px;
     padding-left: 60px;
 
     &:last-child {
-      margin-bottom: 34px;
+      margin-bottom: 31px;
     }
   }
 
@@ -111,8 +112,7 @@
   .council__wrapper {
     width: 454px;
     margin: 0;
-    padding: 35px 27px;
-    //border: 1px solid #ededed;
+    padding: 33px 28px;
   }
 
   .council__item {
@@ -125,5 +125,20 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .council__label {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      top: -4px;
+      left: -58px;
+    }
+  }
+
+  .council__radio:checked + .council__label::after {
+    top: 7px;
+    left: -47px;
   }
 }

@@ -55,12 +55,12 @@
       <h2 class="categories__title visually-hidden">Категории товара</h2>
       <section class="categories__item category">
         <h3 class="category__title category__title--slim">Похудение</h3>
-        <p class="category__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <p class="category__description category__description--slim">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
         <a class="category__btn" href="catalog.html">Каталог Slim</a>
       </section>
       <section class="categories__item category">
         <h3 class="category__title category__title--pro">Набор массы</h3>
-        <p class="category__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <p class="category__description category__description--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
         <a class="category__btn" href="catalog.html">Каталог pro</a>
       </section>
     </section>
@@ -90,17 +90,31 @@
           </div>
           <p class="example__cost">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
-        <div class="example__live">
-          <div class="example__images example__images--before">
-            <img class="example__image example__image--before" src="img/before-mobile@1x.png" width="311" height="232" alt="В начале курса">
-            <img class="example__image example__image--after" src="img/after-mobile@1x.png" width="311" height="232" alt="В конце курса">
-          </div>
-          <div class="example-controls controls">
-            <button class="controls__btn" type="button">Было</button>
-            <div class="controls__scale">
-              <div class="controls__toggle"></div>
+        <div class="example__slider slider">
+          <input class="visually-hidden slider__radio slider__radio--before" type="radio" name="before-after" id="before" checked>
+          <input class="visually-hidden slider__radio slider__radio--after" type="radio" name="before-after" id="after">
+          <div class="slider__images">
+            <div class="slider__image slider__image--before">
+              <picture>
+                <source media="(min-width:1440px)" srcset="img/before-desktop@1x.png">
+                <source media="(min-width:768px)" srcset="img/before-tablet@1x.png">
+                <img src="img/before-mobile@1x.png" width="320" height="240" alt="В начале курса">
+              </picture>
             </div>
-            <button class="controls__btn" type="button">Стало</button>
+            <div class="slider__image slider__image--after">
+              <picture>
+                <source media="(min-width:1440px)" srcset="img/after-desktop@1x.png">
+                <source media="(min-width:768px)" srcset="img/after-tablet@1x.png">
+                <img src="img/after-mobile@1x.png" width="320" height="240" alt="В конце курса">
+              </picture>
+            </div>
+          </div>
+          <div class="slider__controls controls">
+            <label class="controls__btn controls__btn--before" for="before">Было</label>
+            <div class="controls__scale">
+              <div class="controls__toggle controls__toggle--start"></div>
+            </div>
+            <label class="controls__btn controls__btn--after" for="after">Стало</label>
           </div>
         </div>
       </div>
@@ -110,15 +124,17 @@
     <section class="main-footer__contacts contacts">
       <div class="contacts__wrap">
         <div class="contacts__wrapper">
-          <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+          <b class="contacts__slogan">Приглашаем<br> к сотрудничеству дилеров!</b>
+          <p class="contacts__adress">ул. Большая<br>Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <picture>
-        <source media="(min-width:1440px)" srcset="img/bg-map-desktop@1x.png">
-        <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </picture>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/bg-map-desktop@1x.png">
+          <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png">
+          <img  src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+      </div>
       <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель карты">
     </section>
     <div class="main-footer__wrapper">

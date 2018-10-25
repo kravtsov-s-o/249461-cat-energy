@@ -40,7 +40,7 @@
   </header>
   <main class="inner-page">
     <h1 class="inner-page__title">Подбор программы</h1>
-    <p class="inner-page__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+    <p class="inner-page__description">Заполните анкету и мы подберем<br>программу питания для вашего кота</p>
     <form class="program" action="https://echo.htmlacademy.ru" method="post">
       <fieldset class="program__field program__field--info field-info">
         <div class="field-info__wrapper">
@@ -49,13 +49,13 @@
               <label class="cat-info__label" for="name">Имя:*</label>
               <input class="cat-info__text" name="name" id="name" type="text" placeholder="Барсик">
             </p>
-            <p class="cat-info__item">
-              <label class="cat-info__label" for="weight">Вес (кг):*</label>
-              <input class="cat-info__text" name="weight" id="weight" type="number" placeholder="7">
+            <p class="cat-info__item cat-info__item--weight">
+              <label class="cat-info__label cat-info__label--weight" for="weight">Вес (кг):*</label>
+              <input class="cat-info__text cat-info__text--weight" name="weight" id="weight" type="number" placeholder="7">
             </p>
-            <p class="cat-info__item">
-              <label class="cat-info__label" for="age">Возраст (лет):*</label>
-              <input class="cat-info__text" name="age" id="age" type="number" placeholder="7">
+            <p class="cat-info__item cat-info__item--age">
+              <label class="cat-info__label cat-info__label--age" for="age">Возраст (лет):</label>
+              <input class="cat-info__text cat-info__text--age" name="age" id="age" type="number" placeholder="7">
             </p>
           </div>
           <div class="field-info__council council">
@@ -78,7 +78,7 @@
       </fieldset>
       <fieldset class="program__field program__field--contacts field-contacts">
         <div class="field-contacts__wrapper">
-          <legend class="field-contacts__title">Контактные данные (владельца кота)</legend>
+          <legend class="field-contacts__title"><span>Контактные данные (владельца кота)</span></legend>
           <p class="field-contacts__item">
             <label class="field-contacts__label" for="email">E-mail:*</label>
             <input class="field-contacts__input" name="email" id="email" type="email" placeholder="kuklachev@gmail.com">
@@ -87,7 +87,7 @@
             </svg>
           </p>
           <p class="field-contacts__item">
-            <label class="field-contacts__label" for="phone">Телефон:*</label>
+            <label class="field-contacts__label field-contacts__label--phone" for="phone">Телефон:*</label>
             <input class="field-contacts__input" name="phone" id="phone" type="phone" placeholder="8 (960) 900-60-90">
             <svg class="field-contacts__svg field-contacts__svg--phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" width="20" height="20" xml:space="preserve">
   <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
@@ -102,13 +102,13 @@
       </fieldset>
       <fieldset class="program__field program__field--comment field-comment">
         <div class="field-comment__wrapper">
-          <legend class="field-comment__title">Комментарий</legend>
+          <legend class="field-comment__title"><span>Комментарий</span></legend>
           <textarea class="field-comment__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="program__field program__field--more field-more">
         <div class="field-more__wrapper">
-          <legend class="field-more__title">Дополнительно</legend>
+          <legend class="field-more__title"><span>Дополнительно</span></legend>
           <div class="field-more__sideline sideline">
             <p class="sideline__item">
               <input class="sideline__checkbox visually-hidden" name="sugar" id="sugar" type="checkbox" checked>
@@ -132,7 +132,7 @@
       <fieldset class="program__field program__field--control field-control">
         <div class="field-control__wrapper">
           <button class="button field-control__button" type="submit">Отправить заявку</button>
-          <p class="field-control__required">* - Обязательные поля</p>
+          <p class="field-control__required">* — Обязательные поля</p>
         </div>
       </fieldset>
     </form>
@@ -140,9 +140,9 @@
   <footer class="main-footer">
     <section class="main-footer__contacts contacts">
       <div class="contacts__wrap">
-        <div class="contacts__wrapper">
-          <b class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</b>
-          <p class="contacts__adress">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</p>
+        <div class="contacts__wrapper contacts__wrapper--inner">
+          <b class="contacts__slogan">Приглашаем<br> к сотрудничеству дилеров!</b>
+          <p class="contacts__adress">ул. Большая<br>Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
         </div>
       </div>
       <picture>
@@ -153,7 +153,7 @@
       <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель карты">
     </section>
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo"><img src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY"></a>
+      <a class="main-footer__logo"  href="index.html"><img src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY"></a>
       <section class="main-footer__social social">
         <ul class="social-list">
           <li class="social-list__item">

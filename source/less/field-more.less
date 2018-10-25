@@ -1,25 +1,47 @@
+.field-more {
+  border-top: 3px solid @color-brand;
+}
+
 .field-more__wrapper {
   width: 280px;
   margin: 0 auto;
 }
 
 .field-more__title {
-  margin-bottom: 30px;
+  margin-top: -17px;
+  margin-bottom: 39px;
   font-size: 24px;
   line-height: 24px;
+  background-image: linear-gradient(to bottom, transparent 0, transparent 14px, @color-brand 14px, @color-brand 17px, transparent 17px, transparent 100%);
+}
+
+.field-more__title span {
+  display: inline-block;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 22px;
+  background-color: #ffffff;
 }
 
 @import "sideline.less";
 
 @media (min-width: @tablet-width) {
   .field-more__wrapper {
-    width: 630px;
+    width: 628px;
   }
 
   .field-more__title {
-    margin-bottom: 70px;
+    margin-top: -25px;
+    margin-bottom: 52px;
     font-size: 36px;
     line-height: 36px;
+    background-image: linear-gradient(to bottom, transparent 0, transparent 22px, @color-brand 22px, @color-brand 25px, transparent 25px, transparent 100%);
+  }
+
+  .field-more__title span {
+    margin-left: -39px;
+    padding-left: 39px;
+    padding-right: 40px;
   }
 }
 
@@ -29,7 +51,7 @@
   }
 
   .field-more__title {
-    margin-bottom: 70px;
+    margin-bottom: 52px;
     font-size: 36px;
     line-height: 36px;
   }
