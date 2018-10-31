@@ -13,13 +13,15 @@
     <div class="main-header__wrapper">
       <section class="page-header">
         <div class="page-header__wrapper">
-          <a class="page-header__logo" href="index.html">
-            <picture>
-              <source media="(min-width:1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="CAT Energy">
-            </picture>
-          </a>
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo" href="index.html">
+              <picture>
+                <source media="(min-width:1440px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="CAT Energy">
+              </picture>
+            </a>
+          </div>
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list nav-list">
@@ -90,13 +92,12 @@
             <label class="field-contacts__label field-contacts__label--phone" for="phone">Телефон:*</label>
             <input class="field-contacts__input" name="phone" id="phone" type="phone" placeholder="8 (960) 900-60-90">
             <svg class="field-contacts__svg field-contacts__svg--phone" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" width="20" height="20" xml:space="preserve">
-  <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
-  <path
-    d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
+              <path d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z" />
+              <path d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7
   c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6
   C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
-  C7.8,20,8.1,19.7,8.1,19.4z"/>
-</svg>
+  C7.8,20,8.1,19.7,8.1,19.4z" />
+            </svg>
           </p>
         </div>
       </fieldset>
@@ -145,15 +146,17 @@
           <p class="contacts__adress">ул. Большая<br>Конюшенная, д. 19/8<br><span>Санкт-Петербург</span></p>
         </div>
       </div>
-      <picture>
-        <source media="(min-width:1440px)" srcset="img/bg-map-desktop@1x.png">
-        <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-      </picture>
+      <div class="contacts__map">
+        <picture>
+          <source media="(min-width:1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+      </div>
       <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель карты">
     </section>
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo"  href="index.html"><img src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY"></a>
+      <a class="main-footer__logo" href="index.html"><img src="img/logo-footer.svg" width="128" height="24" alt="CAT ENERGY"></a>
       <section class="main-footer__social social">
         <ul class="social-list">
           <li class="social-list__item">
@@ -214,25 +217,8 @@
     </div>
   </footer>
 
-  <!--Открытие меню-->
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
-
+  <script src="js/open-menu.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>

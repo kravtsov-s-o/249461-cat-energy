@@ -12,6 +12,16 @@
       background-image: none;
       background-color: #ffffff;
     }
+
+    @media (min-resolution: @retina-dpi),
+    (min-resolution: @retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+
+      &--inner {
+        background-image: none;
+        background-color: #ffffff;
+      }
+    }
   }
 
   .main-header__wrapper {

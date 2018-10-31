@@ -13,13 +13,15 @@
     <div class="main-header__wrapper">
       <section class="page-header">
         <div class="page-header__wrapper">
-          <a class="page-header__logo">
-            <picture>
-              <source media="(min-width:1440px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="CAT Energy">
-            </picture>
-          </a>
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo">
+              <picture>
+                <source media="(min-width:1440px)" srcset="img/logo-desktop.svg">
+                <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="CAT Energy">
+              </picture>
+            </a>
+          </div>
           <nav class="main-nav main-nav--closed main-nav--nojs">
             <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <ul class="main-nav__list nav-list">
@@ -41,9 +43,9 @@
           <h2 class="alicament__title">Функциональное питание для котов</h2>
           <p class="alicament__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width:1440px)" srcset="img/index-can-desktop@1x.png">
-            <source media="(min-width:768px)" srcset="img/index-can-tablet@1x.jpg">
-            <img class="alicament__image" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Cat Energy - курица">
+            <source media="(min-width:1440px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width:768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img class="alicament__image" src="img/index-can-mobile@1x.png" scrset="img/index-can-mobile@2x.png 2x" alt="Cat Energy - курица">
           </picture>
           <a class="button alicament__button" href="form.html">Подобрать программу</a>
         </div>
@@ -96,16 +98,16 @@
           <div class="slider__images">
             <div class="slider__image slider__image--before">
               <picture>
-                <source media="(min-width:1440px)" srcset="img/before-desktop@1x.png">
-                <source media="(min-width:768px)" srcset="img/before-tablet@1x.png">
-                <img src="img/before-mobile@1x.png" width="320" height="240" alt="В начале курса">
+                <source media="(min-width:1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="В начале курса">
               </picture>
             </div>
             <div class="slider__image slider__image--after">
               <picture>
-                <source media="(min-width:1440px)" srcset="img/after-desktop@1x.png">
-                <source media="(min-width:768px)" srcset="img/after-tablet@1x.png">
-                <img src="img/after-mobile@1x.png" width="320" height="240" alt="В конце курса">
+                <source media="(min-width:1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width:768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="В конце курса">
               </picture>
             </div>
           </div>
@@ -130,9 +132,9 @@
       </div>
       <div class="contacts__map">
         <picture>
-          <source media="(min-width:1440px)" srcset="img/bg-map-desktop@1x.png">
-          <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png">
-          <img  src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          <source media="(min-width:1440px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+          <source media="(min-width:768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Нащ адрес: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
       </div>
       <img class="contacts__map-pin" src="img/map-pin.png" width="55" height="53" alt="Указатель карты">
@@ -199,24 +201,8 @@
     </div>
   </footer>
 
-  <!--Открытие меню-->
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-
-  </script>
+  <script src="js/open-menu.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>
