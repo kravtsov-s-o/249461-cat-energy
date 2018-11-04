@@ -40,7 +40,7 @@
   }
 }
 
-.social-list__item svg {
+.social__link svg {
   fill: #666666;
 
   &:hover {
@@ -51,6 +51,21 @@
     fill: @color-brand;
     opacity: 0.3;
   }
+}
+
+.social__link--vk svg {
+  width: 22px;
+  height: 12px;
+}
+
+.social__link--inst svg {
+  width: 16px;
+  height: 16px;
+}
+
+.social__link--fb svg {
+  width: 10px;
+  height: 19px;
 }
 
 @media (min-width: @tablet-width) {
@@ -90,6 +105,7 @@
   .social-list__item {
     margin-top: 17px;
   }
+
   .social__link {
     &--vk svg {
       margin-left: 15px;
