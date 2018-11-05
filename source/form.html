@@ -82,20 +82,18 @@
         </div>
       </fieldset>
       <fieldset class="program__field program__field--contacts field-contacts">
+        <legend class="field-contacts__title"><span>Контактные данные (владельца кота)</span></legend>
         <div class="field-contacts__wrapper">
-          <legend class="field-contacts__title"><span>Контактные данные (владельца кота)</span></legend>
           <p class="field-contacts__item">
             <label class="field-contacts__label" for="email">E-mail:*</label>
             <input class="field-contacts__input" name="email" id="email" type="email" placeholder="kuklachev@gmail.com">
-            <!--<include src="build/img/icon-mail.svg"></include>-->
             <svg class="field-contacts__svg field-contacts__svg--mail">
               <use xlink:href="#icon-mail"></use>
             </svg>
           </p>
           <p class="field-contacts__item">
             <label class="field-contacts__label field-contacts__label--phone" for="phone">Телефон:*</label>
-            <input class="field-contacts__input" name="phone" id="phone" type="phone" placeholder="8 (960) 900-60-90">
-            <!--<include src="build/img/icon-phone.svg"></include>-->
+            <input class="field-contacts__input" name="phone" id="phone" type="tel" placeholder="8 (960) 900-60-90">
             <svg class="field-contacts__svg field-contacts__svg--phone">
               <use xlink:href="#icon-phone"></use>
             </svg>
@@ -103,14 +101,14 @@
         </div>
       </fieldset>
       <fieldset class="program__field program__field--comment field-comment">
+        <legend class="field-comment__title"><span>Комментарий</span></legend>
         <div class="field-comment__wrapper">
-          <legend class="field-comment__title"><span>Комментарий</span></legend>
           <textarea class="field-comment__textarea" name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
       <fieldset class="program__field program__field--more field-more">
+        <legend class="field-more__title"><span>Дополнительно</span></legend>
         <div class="field-more__wrapper">
-          <legend class="field-more__title"><span>Дополнительно</span></legend>
           <div class="field-more__sideline sideline">
             <p class="sideline__item">
               <input class="sideline__checkbox visually-hidden" name="sugar" id="sugar" type="checkbox" checked>
