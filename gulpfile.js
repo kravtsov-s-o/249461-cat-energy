@@ -46,7 +46,7 @@ gulp.task("webp", function () {
 })
 
 gulp.task("sprite", function () {
-  return gulp.src("source/img/{icon-mail,icon-phone}.svg")
+  return gulp.src("source/img/{icon-mail,icon-phone,htmlacademy,icon-fb,icon-gift,icon-insta,icon-vk}.svg")
   .pipe(svgstore({
     inlineSvg: true
   }))

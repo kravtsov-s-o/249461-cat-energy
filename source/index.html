@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="main-header">
     <div class="main-header__wrapper">
       <section class="page-header">
@@ -76,7 +79,7 @@
         <li class="advantages-list__item">Функциональное питание содержит только полезные питательные вещества.</li>
         <li class="advantages-list__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
         <li class="advantages-list__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
-        <li class="advantages-list__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+        <li class="advantages-list__item">Уже через месяц наслаждайтесь изменениями к лучшему<br>вашего питомца!</li>
       </ul>
     </section>
     <section class="example">
@@ -87,20 +90,20 @@
           <div class="example__result result-list">
             <div class="result-list__item">
               <p class="result-list__item-value">5 кг</p>
-              <p class="result-list__item-description">снижение <br>веса</p>
+              <p class="result-list__item-description result-list__item-description--weight">снижение <br>веса</p>
             </div>
             <div class="result-list__item">
               <p class="result-list__item-value">60 дней</p>
-              <p class="result-list__item-description">затрачено <br>времени</p>
+              <p class="result-list__item-description result-list__item-description--days">затрачено <br>времени</p>
             </div>
           </div>
           <p class="example__cost">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
-        <div class="example__slider slider slider">
+        <div class="example__slider slider">
           <input class="visually-hidden slider__radio slider__radio--before" type="radio" name="before-after" id="before" checked>
           <input class="visually-hidden slider__radio slider__radio--after" type="radio" name="before-after" id="after">
           <div class="slider__images">
-            <div class="slider__image slider__image--before">
+            <div class="slider__image slider__image--block slider__image--before">
               <picture>
                 <source type="image/webp" media="(min-width:1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
                 <source type="image/webp" media="(min-width:768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
@@ -162,30 +165,39 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span>
-              <include src="build/img/icon-vk-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social__link social__link--inst" href="#"><span class="visually-hidden">Instagram</span>
-              <include src="build/img/icon-insta-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-insta"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Facebook</span>
-              <include src="build/img/icon-fb-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </section>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <include src="build/img/htmlacademy.svg"></include>
+          <svg>
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
   </footer>
 
   <script src="js/open-menu.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/picturefill.js"></script>
 </body>
 

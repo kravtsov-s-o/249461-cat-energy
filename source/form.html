@@ -56,11 +56,11 @@
             </p>
             <p class="cat-info__item cat-info__item--weight">
               <label class="cat-info__label cat-info__label--weight" for="weight">Вес (кг):*</label>
-              <input class="cat-info__text cat-info__text--weight" name="weight" id="weight" type="number" placeholder="7">
+              <input class="cat-info__text cat-info__text--weight" name="weight" id="weight" type="text" placeholder="7">
             </p>
             <p class="cat-info__item cat-info__item--age">
               <label class="cat-info__label cat-info__label--age" for="age">Возраст (лет):</label>
-              <input class="cat-info__text cat-info__text--age" name="age" id="age" type="number" placeholder="7">
+              <input class="cat-info__text cat-info__text--age" name="age" id="age" type="text" placeholder="7">
             </p>
           </div>
           <div class="field-info__council council">
@@ -165,24 +165,32 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span>
-              <include src="build/img/icon-vk-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social__link social__link--inst" href="#"><span class="visually-hidden">Instagram</span>
-              <include src="build/img/icon-insta-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-insta"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Facebook</span>
-              <include src="build/img/icon-fb-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </section>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <include src="build/img/htmlacademy.svg"></include>
+          <svg>
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>

@@ -9,6 +9,9 @@
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="main-header main-header--inner">
     <div class="main-header__wrapper">
       <section class="page-header">
@@ -55,7 +58,7 @@
             <img class="product__image product__image--small" src="img/chicken-small-mobile@1x.jpg" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Упаковка">
           </picture>
           <div class="product__description">
-            <b class="product__title">Cat Energy Pro 500 г</b>
+            <h3 class="product__title">Cat Energy Pro <span>500 г</span></h3>
             <table class="product__table">
               <tr>
                 <td>Объем</td>
@@ -86,7 +89,7 @@
             <img class="product__image product__image--big" src="img/chicken-big-mobile@1x.jpg" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Упаковка">
           </picture>
           <div class="product__description">
-            <b class="product__title">Cat Energy Pro 1000 г</b>
+            <h3 class="product__title">Cat Energy Pro <span>1000 г</span></h3>
             <table class="product__table">
               <tr>
                 <td>Объем</td>
@@ -117,7 +120,7 @@
             <img class="product__image product__image--small" src="img/fish-small-mobile@1x.jpg" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Упаковка">
           </picture>
           <div class="product__description">
-            <b class="product__title">Cat Energy Pro 500 г</b>
+            <h3 class="product__title">Cat Energy Pro <span>500 г</span></h3>
             <table class="product__table">
               <tr>
                 <td>Объем</td>
@@ -148,7 +151,7 @@
             <img class="product__image product__image--big" src="img/fish-big-mobile@1x.jpg" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Упаковка">
           </picture>
           <div class="product__description">
-            <b class="product__title">Cat Energy Pro 1000 г</b>
+            <h3 class="product__title">Cat Energy Pro <span>1000 г</span></h3>
             <table class="product__table">
               <tr>
                 <td>Объем</td>
@@ -179,7 +182,7 @@
             <img class="product__image product__image--small" src="img/buckwheat-small-mobile@1x.jpg" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Упаковка">
           </picture>
           <div class="product__description">
-            <b class="product__title">Cat Energy Slim 500 г</b>
+            <h3 class="product__title">Cat Energy Slim <span>500 г</span></h3>
             <table class="product__table">
               <tr>
                 <td>Объем</td>
@@ -210,7 +213,7 @@
             <img class="product__image product__image--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Упаковка">
           </picture>
           <div class="product__description">
-            <b class="product__title">Cat Energy Slim 1000 г</b>
+            <h3 class="product__title">Cat Energy Slim <span>1000 г<span></h3>
             <table class="product__table">
               <tr>
                 <td>Объем</td>
@@ -241,7 +244,7 @@
             <img class="product__image product__image--small" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Упаковка">
           </picture>
           <div class="product__description">
-            <b class="product__title">Cat Energy Slim 500 г</b>
+            <h3 class="product__title">Cat Energy Slim <span>500 г</span></h3>
             <table class="product__table">
               <tr>
                 <td>Объем</td>
@@ -305,7 +308,9 @@
             </tr>
           </table>
           <section class="additional-goods__present present">
-            <include src="build/img/icon-gift.svg"></include>
+            <svg>
+              <use xlink:href="#icon-gift"></use>
+            </svg>
             <p class="present__description">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
           </section>
         </div>
@@ -340,24 +345,32 @@
         <ul class="social-list">
           <li class="social-list__item">
             <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте</span>
-              <include src="build/img/icon-vk-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social__link social__link--inst" href="#"><span class="visually-hidden">Instagram</span>
-              <include src="build/img/icon-insta-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-insta"></use>
+              </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Facebook</span>
-              <include src="build/img/icon-fb-mobile.svg"></include>
+              <svg>
+                <use xlink:href="#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </section>
       <div class="copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <include src="build/img/htmlacademy.svg"></include>
+          <svg>
+            <use xlink:href="#htmlacademy"></use>
+          </svg>
         </a>
       </div>
     </div>
