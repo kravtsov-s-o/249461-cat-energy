@@ -9,11 +9,11 @@
 }
 
 .council__item {
-  margin-top: 25px;
+  margin-top: 24.5px;
   padding-left: 46px;
 
   &:last-child {
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 }
 
@@ -42,6 +42,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.council__radio:focus + .council__label::before {
+  border-color: #bababa;
 }
 
 .council__radio:checked + .council__label::after {

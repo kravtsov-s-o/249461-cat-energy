@@ -92,6 +92,10 @@
     margin: 0 35px;
     font-size: 20px;
     color: #ffffff;
+    text-shadow: 1px 1px 0 @color-brand,
+      -1px 1px 0 @color-brand,
+      1px -1px 0 @color-brand,
+      -1px -1px 0 @color-brand,;
 
     &:hover {
       color: fade(#ffffff, 60%);
@@ -103,16 +107,18 @@
 
     &--active&::after {
       height: 2px;
-
+      box-shadow: 0 0 0 1px @color-brand;
       background-color: #ffffff;
     }
 
     &--inner {
       color: #111111;
+      text-shadow: none;
     }
 
     &--inner&::after {
       background-color: @color-brand;
+      box-shadow: none;
     }
 
     &--inner&:hover {
@@ -122,6 +128,5 @@
     &--inner&:active {
       color: fade(#111111, 30%);
     }
-
   }
 }

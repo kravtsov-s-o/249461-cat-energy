@@ -9,10 +9,13 @@
 }
 
 .field-comment__title {
+  width: 280px;
+  margin: 0 auto;
   margin-top: -17px;
   margin-bottom: 35px;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
   background-image: linear-gradient(to bottom, transparent 0, transparent 14px, @color-brand 14px, @color-brand 17px, transparent 17px, transparent 100%);
 }
 
@@ -60,6 +63,7 @@
   .field-comment__title {
     margin-top: -25px;
     margin-bottom: 75px;
+    width: 630px;
     font-size: 36px;
     line-height: 36px;
     background-image: linear-gradient(to bottom, transparent 0, transparent 22px, @color-brand 22px, @color-brand 25px, transparent 25px, transparent 100%);
@@ -84,6 +88,10 @@
 @media (min-width: @desktop-width) {
   .field-comment {
     margin-bottom: 85px;
+  }
+
+  .field-comment__title {
+    width: 1220px;
   }
 
   .field-comment__wrapper {
