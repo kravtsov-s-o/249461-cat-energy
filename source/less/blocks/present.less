@@ -7,7 +7,7 @@
   padding-bottom: 50px;
 
   text-align: center;
-
+  background-color: @color-brand;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -27,8 +27,8 @@
 }
 
 .present__description {
-  margin: 0;
-
+  margin: 0 auto;
+  width: 170px;
   font-size: 16px;
   line-height: 20px;
   font-family: "Arial", sans-serif;
@@ -38,6 +38,8 @@
 @media (min-width: @tablet-width) {
   .present {
     display: flex;
+    flex-shrink: 0;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 491px;
     margin-top: 65px;
@@ -55,10 +57,13 @@
   }
 
   .present svg {
+    flex-shrink: 0;
     margin: 0;
   }
 
   .present__description {
+    flex-shrink: 0;
+    margin: 0;
     padding-top: 5px;
     text-align: left;
   }
