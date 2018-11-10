@@ -43,7 +43,7 @@ gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("source/img"));
-})
+});
 
 gulp.task("sprite", function () {
   return gulp.src("source/img/{icon-mail,icon-phone,htmlacademy,icon-fb,icon-gift,icon-insta,icon-vk}.svg")
@@ -52,7 +52,7 @@ gulp.task("sprite", function () {
   }))
   .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("build/img"));
-})
+});
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -60,11 +60,11 @@ gulp.task("html", function () {
     include()
   ]))
   .pipe(gulp.dest("build"));
-})
+});
 
 gulp.task("clean", function () {
   return del("build");
-})
+});
 
 gulp.task("copy", function () {
   return gulp.src([
@@ -103,4 +103,5 @@ gulp.task("build", gulp.series(
   "sprite",
   "html"
   ));
+
 gulp.task("start", gulp.series("build", "server"));
